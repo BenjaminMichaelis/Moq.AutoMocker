@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Moq.AutoMocker.TestGenerator\Moq.AutoMocker.TestGenerator.csproj">
+    <ProjectReference Include="..\..\Moq.AutoMocker.Generators\Moq.AutoMocker.Generators.csproj">
       <OutputItemType>Analyzer</OutputItemType>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

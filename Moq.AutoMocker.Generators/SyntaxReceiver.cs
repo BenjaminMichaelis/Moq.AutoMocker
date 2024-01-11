@@ -2,7 +2,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Moq.AutoMocker.TestGenerator;
+namespace Moq.AutoMocker.Generators;
 
 public class SyntaxReceiver : ISyntaxContextReceiver
 {

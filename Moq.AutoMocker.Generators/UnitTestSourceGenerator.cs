@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
 
-namespace Moq.AutoMocker.TestGenerator;
+namespace Moq.AutoMocker.Generators;
 
 [Generator]
 public class UnitTestSourceGenerator : ISourceGenerator

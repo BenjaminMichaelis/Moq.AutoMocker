@@ -3,12 +3,12 @@ using Microsoft.CodeAnalysis.Testing;
 using Microsoft.CodeAnalysis.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using VerifyCS = Moq.AutoMocker.TestGenerator.Tests.CSharpSourceGeneratorVerifier<Moq.AutoMocker.TestGenerator.UnitTestSourceGenerator>;
+using VerifyCS = Moq.AutoMocker.Generators.Tests.CSharpSourceGeneratorVerifier<Moq.AutoMocker.Generators.UnitTestSourceGenerator>;
 
-namespace Moq.AutoMocker.TestGenerator.Tests;
+namespace Moq.AutoMocker.Generators.Tests;
 
 [TestClass]
-public class TestGeneratorTests
+public class GeneratorsTests
 {
     [TestMethod]
     public async Task Generation_WithProjectThatDoesNotReferenceAutoMocker_ProducesDiagnosticWarning()
@@ -186,6 +186,6 @@ public class Controller
 
     private static (string FileName, SourceText SourceText) GetSourceFile(string content, string fileName)
     {
-        return (Path.Combine("Moq.AutoMocker.TestGenerator", "Moq.AutoMocker.TestGenerator.UnitTestSourceGenerator", fileName), SourceText.From(content, Encoding.UTF8));
+        return (Path.Combine("Moq.AutoMocker.Generators", "Moq.AutoMocker.Generators.UnitTestSourceGenerator", fileName), SourceText.From(content, Encoding.UTF8));
     }
 }
